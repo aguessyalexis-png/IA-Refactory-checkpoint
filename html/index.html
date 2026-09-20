@@ -1,55 +1,73 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nos Forfaits</title>
-  <link rel="stylesheet" href="../css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nos forfaits</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 
-  <h1 class="page-title">Choisissez votre forfait</h1>
+<header class="page-header">
+    <h1>Choisissez votre forfait</h1>
+    <p>Des offres adaptées à chaque besoin, avec une qualité de service exceptionnelle</p>
+</header>
 
-  <div class="pricing-container">
+<div class="pricing-container">
 
-    <div class="pricing">
-      <h2 class="title">Forfait de base</h2>
-      <p class="price">9,99 $ <span>/mois</span></p>
-      <ul class="features">
-        <li>1 Go de stockage</li>
-        <li>Assistance de base</li>
-        <li>Toutes les fonctionnalités principales</li>
-      </ul>
-      <button type="button" class="btn">Démarrer l'essai</button>
+    <div class="pricing base">
+        <div class="card-icon">⚡</div>
+        <h2 class="title">Forfait de base</h2>
+        <p class="subtitle">L'essentiel pour bien démarrer</p>
+        <p class="price">9,99 $<span>/mois</span></p>
+        <ul class="features">
+            <li>Accès à toutes les fonctionnalités de base</li>
+            <li>Support client 24/7</li>
+        </ul>
+        <button type="button" class="btn">Choisir ce forfait</button>
     </div>
 
     <div class="pricing featured">
-      <h2 class="title">Forfait simple</h2>
-      <p class="price">19,99 $ <span>/mois</span></p>
-      <ul class="features">
-        <li>10 Go de stockage</li>
-        <li>Assistance prioritaire</li>
-        <li>Toutes les fonctionnalités principales</li>
-        <li>Sauvegarde automatique</li>
-      </ul>
-      <button type="button" class="btn">Démarrer l'essai</button>
+        <span class="badge">Populaire</span>
+        <div class="card-icon">★</div>
+        <h2 class="title">Forfait simple</h2>
+        <p class="subtitle">Le meilleur rapport qualité-prix</p>
+        <p class="price">19,99 $<span>/mois</span></p>
+        <ul class="features">
+            <li>Tout du forfait de base</li>
+            <li>Fonctionnalité avancée 1</li>
+            <li>Fonctionnalité avancée 2</li>
+        </ul>
+        <button type="button" class="btn">Choisir ce forfait</button>
     </div>
 
     <div class="pricing premium">
-      <h2 class="title">Forfait premium</h2>
-      <p class="price">39,99 $ <span>/mois</span></p>
-      <ul class="features">
-        <li>Stockage illimité</li>
-        <li>Assistance 24/7</li>
-        <li>Toutes les fonctionnalités avancées</li>
-        <li>Sauvegarde automatique</li>
-        <li>Accès API complet</li>
-      </ul>
-      <button type="button" class="btn">Démarrer l'essai</button>
+        <div class="card-icon">👑</div>
+        <h2 class="title">Forfait premium</h2>
+        <p class="subtitle">La puissance sans limites</p>
+        <p class="price">39,99 $<span>/mois</span></p>
+        <ul class="features">
+            <li>Tout du forfait simple</li>
+            <li>Fonctionnalité avancée 3</li>
+            <li>Fonctionnalité avancée 4</li>
+        </ul>
+        <button type="button" class="btn">Choisir ce forfait</button>
     </div>
 
-  </div>
+</div>
 
-  <script src="../js/script.js"></script>
+<section class="cta-section">
+    <h2>Prêt à transformer votre expérience ?</h2>
+    <p>
+        Rejoignez des milliers d'utilisateurs satisfaits et profitez d'un essai gratuit de <strong>14 jours</strong>,
+        sans engagement. Passez à l'abonnement qui vous convient et débloquez tout le potentiel de notre plateforme dès aujourd'hui !
+    </p>
+    <button type="button" class="cta-btn">Commencer mon essai gratuit</button>
+    <span class="cta-note">Aucune carte bancaire requise · Annulation à tout moment</span>
+</section>
+
 </body>
 </html>
