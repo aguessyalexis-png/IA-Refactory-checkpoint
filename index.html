@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nos forfaits</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #f5f7fa 0%, #e4e8ec 100%);
+  padding: 40px 20px;
+}
+
+.pricing-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.pricing {
+  width: 300px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 24px;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.pricing:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+  border-color: #2563eb;
+}
+
+.pricing.featured {
+  border-color: #2563eb;
+  position: relative;
+}
+
+.pricing.featured::before {
+  content: "Populaire";
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #2563eb;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 4px 14px;
+  border-radius: 20px;
+}
+
+.pricing.featured:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 16px 35px rgba(37, 99, 235, 0.25);
+}
+
+.title {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 0 0 8px;
+  color: #1e293b;
+}
+
+.price {
+  font-size: 28px;
+  font-weight: bold;
+  color: #16a34a;
+  margin: 0 0 16px;
+}
+
+.price span {
+  font-size: 14px;
+  font-weight: normal;
+  color: #64748b;
+}
+
+.features {
+  list-style: none;
+  padding-left: 0;
+  margin: 0 0 20px;
+}
+
+.features li {
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+  color: #475569;
+}
+
+.features li:last-child {
+  border-bottom: none;
+}
+
+.btn {
+  width: 100%;
+  background: #2563eb;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+  background: #1d4ed8;
+  transform: scale(1.03);
+}
+
+.pricing.premium .btn {
+  background: #7c3aed;
+}
+
+.pricing.premium .btn:hover {
+  background: #6d28d9;
+}
+
+.pricing.premium:hover {
+  border-color: #7c3aed;
+}
+</style>
+</head>
+<body>
+
+<div class="pricing-container">
+
+  <div class="pricing">
+    <h2 class="title">Forfait de base</h2>
+    <p class="price">9,99 $<span>/mois</span></p>
+
+    <ul class="features">
+      <li>1 Go de stockage</li>
+      <li>Assistance de base</li>
+      <li>Toutes les fonctionnalités principales</li>
+    </ul>
+
+    <button type="button" class="btn">Démarrer l'essai</button>
+  </div>
+
+  <div class="pricing featured">
+    <h2 class="title">Forfait simple</h2>
+    <p class="price">19,99 $<span>/mois</span></p>
+
+    <ul class="features">
+      <li>10 Go de stockage</li>
+      <li>Assistance prioritaire</li>
+      <li>Fonctionnalités avancées</li>
+      <li>Sauvegarde automatique</li>
+    </ul>
+
+    <button type="button" class="btn">Choisir ce forfait</button>
+  </div>
+
+  <div class="pricing premium">
+    <h2 class="title">Forfait premium</h2>
+    <p class="price">39,99 $<span>/mois</span></p>
+
+    <ul class="features">
+      <li>Stockage illimité</li>
+      <li>Assistance 24/7</li>
+      <li>Toutes les fonctionnalités</li>
+      <li>Accès API complet</li>
+      <li>Support dédié</li>
+    </ul>
+
+    <button type="button" class="btn">Passer au premium</button>
+  </div>
+
+</div>
+
+</body>
+</html>
